@@ -12,6 +12,29 @@ This app predicts the **Palmer Penguin** species!
 Data obtained from the [palmerpenguins library](https://github.com/allisonhorst/palmerpenguins) in R by Allison Horst.
 """)
 
+st.write("""
+# Artwork
+  You can download palmerpenguins art (useful for teaching with the data) in vignette("art"). 
+  If you use this artwork, please cite with: “Artwork by @allison_horst”.  
+""")
+
+st.write("""
+# Meet the Palmer penguins 
+""")
+
+img1 = mpimg.imread('lter_penguins.png')
+st.image(img1)
+st.sidebar.header('User Input Features')
+
+st.write("""
+# Bill dimensions
+  The culmen is the upper ridge of a bird’s bill. In the simplified penguins data, culmen length and depth are renamed as variables bill_length_mm and bill_depth_mm to be more intuitive.
+
+  For this penguin data, the culmen (bill) length and depth are measured as shown below (thanks Kristen Gorman for clarifying!): 
+""")
+img2 = mpimg.imread('culmen_depth.png')
+st.image(img2)
+
 st.sidebar.header('User Input Features')
 
 st.sidebar.markdown("""
