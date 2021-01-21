@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import pickle
+import matplotlib.image as mpimg
 from sklearn.ensemble import RandomForestClassifier
 
 st.write("""
